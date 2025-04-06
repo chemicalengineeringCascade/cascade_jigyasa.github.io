@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cascade Events</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #6A0DAD; /* Purple background */
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: white;
+    }
+
+    header {
+      background: linear-gradient(to right, red, darkred);
+      color: white;
+      padding: 20px;
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .events-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .event-card {
+      background-color: #6A0DAD;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      border: 2px solid red;
+    }
+
+    .event-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.5);
+    }
+
+    .event-image {
+      width: 100%;
+      height: 500px; /* Poster size */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      background-color: #ccc; /* fallback */
+    }
+
+    .event-text {
+      padding: 20px;
+      background: url('download.jpg') no-repeat center;
+      background-size: cover;
+      color: black;
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .event-text:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: black;
+    }
+
+    @media (max-width: 900px) {
+      .events-container {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .events-container {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Cascade - Events</header>
+
+  <div class="events-container">
+    <div class="event-card">
+      <div class="event-image" style="background-image: url('images/event1.jpg');"></div>
+      <div class="event-text">Brain Storm (Technical Quiz)</div>
+    </div>
+    <div class="event-card">
+      <div class="event-image" style="background-image: url('images/event2.jpg');"></div>
+      <div class="event-text">Chem Spark Summit (Technical Paper/Poster)</div>
+    </div>
+    <div class="event-card">
+      <div class="event-image" style="background-image: url('images/event3.jpg');"></div>
+      <div class="event-text">Floor Cross (Debate)</div>
+    </div>
+    <div class="event-card">
+      <div class="event-image" style="background-image: url('images/event4.jpg');"></div>
+      <div class="event-text">Weavers (Design Contest)</div>
+    </div>
+    <div class="event-card">
+      <div class="event-image" style="background-image: url('images/event5.jpg');"></div>
+      <div class="event-text">Off-Script (Extempore)</div>
+    </div>
+    <div class="event-card">
+      <div class="event-image" style="background-image: url('images/event6.jpg');"></div>
+      <div class="event-text">Mock Shark Tank (Startup Idea)</div>
+    </div>
+    <div class="event-card">
+      <div class="event-image" style="background-image: url('images/event7.jpg');"></div>
+      <div class="event-text">Reactor Diffuser (Problem Solving)</div>
+    </div>
+    <div class="event-card">
+      <div class="event-image" style="background-image: url('images/event8.jpg');"></div>
+      <div class="event-text">Chem Pictionary (Connection)</div>
+    </div>
+    <div class="event-card">
+      <div class="event-image" style="background-image: url('images/event9.jpg');"></div>
+      <div class="event-text">Brain Teaser (Memory Game)</div>
+    </div>
+  </div>
+
+</body>
+</html>
