@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cascade Event - Chem Pictionary</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #6A0DAD, #4B0082);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, #FF416C, #FF4B2B);
+      padding: 20px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      align-items: flex-start;
+    }
+
+    .poster-section {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .poster-section img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .qr-box {
+      background: #fff;
+      color: #000;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    .qr-box img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    .details-section {
+      flex: 2;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      color: #FFD700;
+      margin-top: 25px;
+      border-bottom: 2px solid #FF4B2B;
+      padding-bottom: 5px;
+    }
+
+    p, li {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .button-group {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .button-group a {
+      display: inline-block;
+      margin: 10px 15px;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .register-btn {
+      background-color: #FFD700;
+      color: #000;
+    }
+
+    .register-btn:hover {
+      background-color: #e6c200;
+    }
+
+    .back-btn {
+      background-color: #FF4B2B;
+      color: white;
+    }
+
+    .back-btn:hover {
+      background-color: #cc3922;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .poster-section, .details-section {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Cascade Event - Chem Pictionary</header>
+
+  <div class="container">
+    <div class="poster-section">
+      <img src="images/event8.jpg" alt="Chem Pictionary Poster">
+      <div class="qr-box">
+        <p><strong>Scan to Register</strong></p>
+        <img src="images/qr-code.jpg" alt="QR Code">
+      </div>
+    </div>
+
+    <div class="details-section">
+      <h2>Event Overview</h2>
+      <p>
+        <strong>Chem Pictionary</strong> is a fun and engaging image-based chemical clue-solving game. 
+        Participants will battle through three thrilling rounds of increasing difficulty designed to test your 
+        chemistry knowledge, logic, and speed.
+      </p>
+      <p><strong>Date:</strong> 10th April 2025</p>
+
+      <h2>Event Coordinators</h2>
+      <ul>
+        <li>Venunarayanan – 8807265294</li>
+        <li>Guru Saran – 9123565934</li>
+      </ul>
+
+      <h2>Rules and Format</h2>
+      <ul>
+        <li>Participation: Solo or in teams of 2.</li>
+        <li><strong>Round 1:</strong> Image Identification – 2 images (5 points each)</li>
+        <li><strong>Round 2:</strong> Image Connection – 3 images (7 points each)</li>
+        <li><strong>Round 3:</strong> Rapid Fire Buzzer – Multiple images (10 points each)</li>
+        <li>Judgment is based on accuracy, reasoning, and timing.</li>
+      </ul>
+
+      <h2>Fair Play & Winner Selection</h2>
+      <ul>
+        <li>Strictly no misconduct or cheating — leads to immediate disqualification.</li>
+        <li>Winners are those with the highest cumulative score.</li>
+      </ul>
+
+      <h2>Prizes</h2>
+      <ul>
+        <li>Winners will receive certificates and either cash prizes or books.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="button-group">
+    <a class="register-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScQ0xIFOtWL6AWJJ6JLb7Hu-O1XbX2pF4SJI9JPuahOJNVjGQ/viewform?usp=sharing" target="_blank">Register Now</a>
+    <a class="back-btn" href="index.html">← Back to Events</a>
+  </div>
+
+</body>
+</html>

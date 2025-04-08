@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Off Script - Event Details</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #6A0DAD;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, red, darkred);
+      padding: 20px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      align-items: flex-start;
+    }
+
+    .poster {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+    }
+
+    .poster img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .description {
+      flex: 2;
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      color: #FFD700;
+      margin-top: 25px;
+      border-bottom: 2px solid red;
+      padding-bottom: 5px;
+    }
+
+    p, li {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .back-btn, .register-btn {
+      display: inline-block;
+      margin: 40px 10px 20px;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      background-color: red;
+      color: white;
+    }
+
+    .back-btn:hover {
+      background-color: darkred;
+    }
+
+    .register-btn {
+      background-color: #FFD700;
+      color: black;
+    }
+
+    .register-btn:hover {
+      background-color: #e6c200;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .poster, .description {
+        max-width: 100%;
+      }
+    }
+
+    .coordinators, .rules, .prizes {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Off Script - Extempore Competition</header>
+
+  <div class="container">
+    <div class="poster">
+      <img src="images/event5.jpg" alt="Off Script Poster">
+      <div style="text-align: center; background: white; color: black; padding: 10px; margin-top: 15px; border-radius: 8px;">
+        <p style="font-weight: bold;">For Registration</p>
+        <img src="images/qr-code.jpg" alt="QR Code" style="width: 150px; height: 150px; object-fit: contain; border-radius: 8px;">
+      </div>
+    </div>
+
+    <div class="description">
+      <h2>Event Overview</h2>
+      <p>
+        Off Script is an extempore speech competition designed to challenge your ability to speak on the spot with minimal or no preparation. Topics will be related to Chemical Engineering.
+      </p>
+      <p><strong>Date:</strong> 10th April 2025</p>
+
+      <div class="coordinators">
+        <h2>Event Coordinators</h2>
+        <ul>
+          <li>Arthi – 7810075589</li>
+          <li>Thamizharsan – 6385237125</li>
+        </ul>
+      </div>
+
+      <div class="rules">
+        <h2>Event Format</h2>
+        <ul>
+          <li>Individual participation only.</li>
+          <li>Topic will be given on the spot.</li>
+          <li>Preparation Time: 5 minutes.</li>
+          <li>Speech Time Limit: Up to 5 minutes.</li>
+        </ul>
+
+        <h2>Pre-Event Guidelines</h2>
+        <ul>
+          <li>Register at least one day before the event.</li>
+          <li>Participants must arrive 15 minutes before the start time.</li>
+        </ul>
+
+        <h2>Scoring & Evaluation Criteria</h2>
+        <ul>
+          <li>Content, originality, clarity, and focus.</li>
+          <li>Use of examples, facts, and reasoning.</li>
+        </ul>
+
+        <h2>Fair Play</h2>
+        <ul>
+          <li>Any misbehavior or rule violation will lead to disqualification.</li>
+        </ul>
+
+        <h2>Winner Selection</h2>
+        <ul>
+          <li>Judges will evaluate and decide based on performance and scores.</li>
+        </ul>
+      </div>
+
+      <div class="prizes">
+        <h2>Prizes</h2>
+        <ul>
+          <li>Winners will receive certificates and either cash prizes or books.</li>
+          <li>All participants will receive certificates.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <a class="back-btn" href="index.html">← Back to Events</a>
+    <a class="register-btn" 
+       href="https://docs.google.com/forms/d/e/1FAIpQLScQ0xIFOtWL6AWJJ6JLb7Hu-O1XbX2pF4SJI9JPuahOJNVjGQ/viewform?usp=sharing" 
+       target="_blank">
+      Register Now
+    </a>
+  </div>
+
+</body>
+</html>

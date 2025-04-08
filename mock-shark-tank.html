@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mock Shark Tank - Event Details</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #6A0DAD;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, red, darkred);
+      padding: 20px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      align-items: flex-start;
+    }
+
+    .poster {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+    }
+
+    .poster img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .description {
+      flex: 2;
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      color: #FFD700;
+      margin-top: 25px;
+      border-bottom: 2px solid red;
+      padding-bottom: 5px;
+    }
+
+    p, li {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .back-btn, .register-btn {
+      display: inline-block;
+      margin: 40px 10px 20px;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      background-color: red;
+      color: white;
+    }
+
+    .back-btn:hover {
+      background-color: darkred;
+    }
+
+    .register-btn {
+      background-color: #FFD700;
+      color: black;
+    }
+
+    .register-btn:hover {
+      background-color: #e6c200;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .poster, .description {
+        max-width: 100%;
+      }
+    }
+
+    .coordinators, .rules, .prizes {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Mock Shark Tank - Startup Idea Pitch</header>
+
+  <div class="container">
+    <div class="poster">
+      <img src="images/event6.jpg" alt="Mock Shark Tank Poster">
+      <div style="text-align: center; background: white; color: black; padding: 10px; margin-top: 15px; border-radius: 8px;">
+        <p style="font-weight: bold;">For Registration</p>
+        <img src="images/qr-code.jpg" alt="QR Code" style="width: 150px; height: 150px; object-fit: contain; border-radius: 8px;">
+      </div>
+    </div>
+
+    <div class="description">
+      <h2>Event Overview</h2>
+      <p>
+        Mock Shark Tank is a business idea pitch competition where participants showcase their startup concepts in front of a panel of judges. Ideas will be evaluated based on originality, feasibility, business strategy, and pitch quality.
+      </p>
+      <p><strong>Date:</strong> 11th April 2025</p>
+
+      <div class="coordinators">
+        <h2>Event Coordinators</h2>
+        <ul>
+          <li>Anarkali – 902569422</li>
+          <li>Devamugunthaa – 7806844717 / 9443717531</li>
+        </ul>
+      </div>
+
+      <div class="rules">
+        <h2>Rules and Regulations</h2>
+        <ul>
+          <li>Participants can compete individually or in a team of up to 2 members.</li>
+          <li>Participants must register before the event.</li>
+          <li>Each team has 5 minutes to pitch, followed by up to 3 minutes Q & A.</li>
+          <li>Presenting a Minimum Viable Product (MVP) or visual aid is optional.</li>
+        </ul>
+
+        <h2>Scoring & Evaluation Criteria</h2>
+        <ul>
+          <li>Innovation & Originality</li>
+          <li>Feasibility & Market Potential</li>
+          <li>Presentation & Communication</li>
+          <li>Business Model & Strategy</li>
+          <li>Q & A Handling</li>
+        </ul>
+
+        <h2>Judges' Investment Mechanism</h2>
+        <ul>
+          <li>Judges will allocate a fake investment amount secretly based on performance.</li>
+          <li>The highest invested team will be declared the winner.</li>
+          <li>Investment amounts will be revealed only during prize distribution.</li>
+        </ul>
+
+        <h2>Fair Play</h2>
+        <ul>
+          <li>Misrepresentation, plagiarism, or unethical behavior will lead to disqualification.</li>
+        </ul>
+
+        <h2>Registration</h2>
+        <ul>
+          <li>Register online or on-site before the event.</li>
+          <li>Teams can have a maximum of 2 members.</li>
+        </ul>
+
+        <h2>Winner Selection</h2>
+        <ul>
+          <li>Judges will calculate final scores and investments.</li>
+          <li>Top performers will be awarded based on total investment and score.</li>
+        </ul>
+      </div>
+
+      <div class="prizes">
+        <h2>Prizes</h2>
+        <ul>
+          <li>Winners receive certificates and either cash prizes or technical books.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <a class="back-btn" href="index.html">← Back to Events</a>
+    <a class="register-btn" 
+       href="https://docs.google.com/forms/d/e/1FAIpQLScQ0xIFOtWL6AWJJ6JLb7Hu-O1XbX2pF4SJI9JPuahOJNVjGQ/viewform?usp=sharing" 
+       target="_blank">
+      Register Now
+    </a>
+  </div>
+
+</body>
+</html>

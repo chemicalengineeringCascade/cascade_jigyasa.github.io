@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weavers - Design Contest</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #6A0DAD;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, red, darkred);
+      padding: 20px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      align-items: flex-start;
+    }
+
+    .poster {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+    }
+
+    .poster img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .description {
+      flex: 2;
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      color: #FFD700;
+      margin-top: 25px;
+      border-bottom: 2px solid red;
+      padding-bottom: 5px;
+    }
+
+    p, li {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .back-btn, .register-btn {
+      display: inline-block;
+      margin: 40px 10px 20px;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      font-weight: bold;
+    }
+
+    .back-btn {
+      background-color: red;
+      color: white;
+    }
+
+    .back-btn:hover {
+      background-color: darkred;
+    }
+
+    .register-btn {
+      background-color: #FFD700;
+      color: black;
+    }
+
+    .register-btn:hover {
+      background-color: #e6c200;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .poster, .description {
+        max-width: 100%;
+      }
+    }
+
+    .coordinators, .rules, .prizes {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Weavers - Design Contest</header>
+
+  <div class="container">
+    <div class="poster">
+      <img src="images/event4.jpg" alt="Weavers Poster">
+      <div style="text-align: center; background: white; color: black; padding: 10px; margin-top: 15px; border-radius: 8px;">
+        <p style="font-weight: bold;">For Registration</p>
+        <img src="images/qr-code.jpg" alt="QR Code" style="width: 150px; height: 150px; object-fit: contain; border-radius: 8px;">
+      </div>
+    </div>
+
+    <div class="description">
+      <h2>Event Overview</h2>
+      <p>
+        Weavers is a design contest where participants solve real-world problems involving chemical processes, plant design, or equipment. It encourages innovation, feasibility, and practical impact.
+      </p>
+      <p><strong>Date:</strong> 10th April 2025</p>
+
+      <div class="coordinators">
+        <h2>Event Coordinators</h2>
+        <ul>
+          <li>Subashri – 9003738324</li>
+          <li>Sindhujhaa – 7094601397</li>
+        </ul>
+      </div>
+
+      <div class="rules">
+        <h2>Registration</h2>
+        <ul>
+          <li>Individual participation or in a team of up to 2 members.</li>
+          <li>Participants must register before the event.</li>
+        </ul>
+
+        <h2>Event Format</h2>
+        <ul>
+          <li>Participants are required to address a problem involving chemical design or equipment.</li>
+          <li>10 minutes will be given to explain the design.</li>
+        </ul>
+
+        <h2>General Rules</h2>
+        <ul>
+          <li>Participants must address the problem statement clearly.</li>
+          <li>Clarity of calculations and technical analysis is essential.</li>
+          <li>Originality, feasibility, and potential impact are important criteria.</li>
+          <li>Any form of misrepresentation, plagiarism, or unethical behaviour will lead to disqualification.</li>
+        </ul>
+
+        <h2>Scoring & Evaluation Criteria</h2>
+        <ul>
+          <li>Clarity and comprehensiveness of addressing the problem.</li>
+          <li>Correctness and transparency in calculations and analysis.</li>
+          <li>Novelty, impact, and feasibility of the design.</li>
+        </ul>
+
+        <h2>Winner Selection</h2>
+        <ul>
+          <li>Judges will evaluate based on the overall score.</li>
+          <li>Top scoring designs will be awarded.</li>
+        </ul>
+      </div>
+
+      <div class="prizes">
+        <h2>Prizes</h2>
+        <ul>
+          <li>Winners will receive certificates of merit and cash prizes or technical books.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <a class="back-btn" href="index.html">← Back to Events</a>
+    <a class="register-btn" 
+       href="https://docs.google.com/forms/d/e/1FAIpQLScQ0xIFOtWL6AWJJ6JLb7Hu-O1XbX2pF4SJI9JPuahOJNVjGQ/viewform?usp=sharing" 
+       target="_blank">
+      Register Now
+    </a>
+  </div>
+
+</body>
+</html>

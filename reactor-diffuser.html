@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reactor Diffuser - Event Details</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #6A0DAD;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, red, darkred);
+      padding: 20px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      align-items: flex-start;
+    }
+
+    .poster {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+    }
+
+    .poster img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .description {
+      flex: 2;
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      color: #FFD700;
+      margin-top: 25px;
+      border-bottom: 2px solid red;
+      padding-bottom: 5px;
+    }
+
+    p, li {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .back-btn, .register-btn {
+      display: inline-block;
+      margin: 40px 10px 20px;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .back-btn {
+      background-color: red;
+      color: white;
+    }
+
+    .back-btn:hover {
+      background-color: darkred;
+    }
+
+    .register-btn {
+      background-color: #FFD700;
+      color: black;
+      font-weight: bold;
+    }
+
+    .register-btn:hover {
+      background-color: #e6c200;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .poster, .description {
+        max-width: 100%;
+      }
+    }
+
+    .coordinators, .rules, .prizes {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Reactor Diffuser - Problem-Solving Competition</header>
+
+  <div class="container">
+    <div class="poster">
+      <img src="images/event7.jpg" alt="Reactor Diffuser Poster">
+      <div style="text-align: center; background: white; color: black; padding: 10px; margin-top: 15px; border-radius: 8px;">
+        <p style="font-weight: bold;">For Registration</p>
+        <img src="images/qr-code.jpg" alt="QR Code" style="width: 150px; height: 150px; object-fit: contain; border-radius: 8px;">
+      </div>
+    </div>
+
+    <div class="description">
+      <h2>Event Overview</h2>
+      <p>
+        Reactor Diffuser is a multi-round problem-solving competition designed to test the engineering minds of participants. 
+        Think fast, solve smart, and prove your technical prowess.
+      </p>
+      <p><strong>Date:</strong> 10th April 2025</p>
+
+      <div class="coordinators">
+        <h2>Event Coordinators</h2>
+        <ul>
+          <li>Venunarayanan – 8807265294</li>
+          <li>Devamugunthaa – 7806844717 / 9443717531</li>
+          <li>Tharani Ponnusamy – 8300468171</li>
+        </ul>
+      </div>
+
+      <div class="rules">
+        <h2>Registration</h2>
+        <ul>
+          <li>Participants can compete individually or in a team of up to 2 members.</li>
+          <li>Participants must register before the event.</li>
+        </ul>
+
+        <h2>Event Format</h2>
+        <ul>
+          <li><strong>Round 1: MCQ Round</strong> – Technical and aptitude MCQs to qualify as problem solvers.</li>
+          <li><strong>Round 2: Team vs. Team Challenge</strong> – Head-to-head problem-solving to eliminate and advance.</li>
+          <li><strong>Round 3: Reactor Diffuser Core Round</strong> – Solve a set of 5–6 advanced problems as fast and accurately as possible.</li>
+        </ul>
+
+        <h2>Scoring & Evaluation Criteria</h2>
+        <ul>
+          <li>MCQ Accuracy in Round 1</li>
+          <li>Competitive performance in Round 2</li>
+          <li>Speed and precision in the final round</li>
+        </ul>
+
+        <h2>Fair Play</h2>
+        <ul>
+          <li>Plagiarism, misrepresentation, or unethical behavior leads to disqualification.</li>
+        </ul>
+
+        <h2>Winner Selection</h2>
+        <ul>
+          <li>Final winners are those who solve the most problems accurately in the shortest time in Round 3.</li>
+          <li>Judges’ decision is final.</li>
+        </ul>
+      </div>
+
+      <div class="prizes">
+        <h2>Prizes</h2>
+        <ul>
+          <li>Certificates of merit and either cash prizes or books will be awarded to the top performers.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <a class="back-btn" href="index.html">← Back to Events</a>
+    <a class="register-btn" 
+       href="https://docs.google.com/forms/d/e/1FAIpQLScQ0xIFOtWL6AWJJ6JLb7Hu-O1XbX2pF4SJI9JPuahOJNVjGQ/viewform?usp=sharing" 
+       target="_blank">
+      Register Now
+    </a>
+  </div>
+
+</body>
+</html>

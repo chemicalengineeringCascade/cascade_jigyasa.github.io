@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brain Storm - Event Details</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #6A0DAD;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, red, darkred);
+      padding: 20px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      align-items: flex-start;
+    }
+
+    .poster {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .poster img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .qr-block {
+      background: white;
+      color: black;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    .qr-block img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    .description {
+      flex: 2;
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .register-btn, .back-btn {
+      display: inline-block;
+      margin: 20px 10px;
+      padding: 12px 25px;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .register-btn {
+      background-color: #FFD700;
+      color: black;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    .register-btn:hover {
+      background-color: #e6c200;
+    }
+
+    .back-btn {
+      background-color: red;
+      color: white;
+    }
+
+    .back-btn:hover {
+      background-color: darkred;
+    }
+
+    h2 {
+      color: #FFD700;
+      margin-top: 25px;
+      border-bottom: 2px solid red;
+      padding-bottom: 5px;
+    }
+
+    p, li {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .poster, .description {
+        max-width: 100%;
+      }
+
+      .register-btn, .back-btn {
+        display: block;
+        margin: 15px auto;
+        width: fit-content;
+      }
+    }
+
+    .coordinators, .rules, .prizes {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Brain Storm - Technical Quiz</header>
+
+  <div class="container">
+    <div class="poster">
+      <img src="images/event1.jpg" alt="Brain Storm Poster" />
+      <div class="qr-block">
+        <p style="font-weight: bold;">For Registration</p>
+        <img src="images/qr-code.jpg" alt="QR Code" />
+      </div>
+    </div>
+
+    <div class="description">
+      <h2>Event Overview</h2>
+      <p>
+        A Brainstorm is a short, informal test or game where we test your knowledge by asking you questions. 
+        It is used in educational settings to assess understanding and to test general knowledge.
+      </p>
+      <p><strong>Date:</strong> 11th April 2025</p>
+
+      <div class="coordinators">
+        <h2>Event Coordinators</h2>
+        <ul>
+          <li>Jeevanandham. S – 9003624635</li>
+          <li>Ilakkiya Aruna. S – 9994586742</li>
+        </ul>
+      </div>
+
+      <div class="prizes">
+        <h2>Prizes</h2>
+        <ul>
+          <li>Winners will receive cash prizes or technical books.</li>
+          <li>All participants will receive certificates.</li>
+        </ul>
+      </div>
+
+      <div class="rules">
+        <h2>Registration</h2>
+        <ul>
+          <li>Each participant competes individually.</li>
+          <li>Participants can register online or on-site before the event.</li>
+        </ul>
+
+        <h2>Fair Play</h2>
+        <ul>
+          <li>Any form of misbehavior, disrespect, or rule violation will lead to disqualification.</li>
+        </ul>
+
+        <h2>Winner Selection</h2>
+        <ul>
+          <li>The winner will be chosen based on the judges’ decision after evaluating scores.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Buttons at the bottom center -->
+  <div style="text-align: center; margin-bottom: 40px;">
+    <a class="back-btn" href="index.html">← Back to Events</a>
+    <a class="register-btn" 
+       href="https://docs.google.com/forms/d/e/1FAIpQLScQ0xIFOtWL6AWJJ6JLb7Hu-O1XbX2pF4SJI9JPuahOJNVjGQ/viewform?usp=sharing" 
+       target="_blank">
+      Register Now
+    </a>
+   
+  </div>
+
+</body>
+</html>
