@@ -9,7 +9,7 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #6A0DAD; /* Purple background */
+      background-color: #6A0DAD;
       margin: 0;
       padding: 0;
       text-align: center;
@@ -19,12 +19,26 @@
     header {
       background: linear-gradient(to right, red, darkred);
       color: white;
-      padding: 20px;
-      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .header-title {
+      font-size: 26px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 2px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
     }
 
     .events-container {
@@ -44,6 +58,8 @@
       transition: transform 0.3s, box-shadow 0.3s;
       position: relative;
       border: 2px solid red;
+      text-decoration: none;
+      color: inherit;
     }
 
     .event-card:hover {
@@ -53,11 +69,10 @@
 
     .event-image {
       width: 100%;
-      height: 500px; /* Poster size */
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      background-color: #ccc; /* fallback */
+      height: 500px;
+      object-fit: cover;
+      background-color: #ccc;
+      display: block;
     }
 
     .event-text {
@@ -85,9 +100,21 @@
       .events-container {
         grid-template-columns: repeat(2, minmax(300px, 1fr));
       }
+      .header-title {
+        font-size: 22px;
+      }
     }
 
     @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .header-title {
+        margin: 10px 0;
+      }
+
       .events-container {
         grid-template-columns: repeat(1, minmax(300px, 1fr));
       }
@@ -96,45 +123,50 @@
 </head>
 <body>
 
-  <header>Cascade - Events</header>
+  <header>
+    <img src="images/college-logo.png" alt="College Logo" class="logo">
+    <div class="header-title">Cascade - Events</div>
+    <img src="images/event-logo.jpg" alt="Event Logo" class="logo">
+  </header>
 
   <div class="events-container">
-    <div class="event-card">
-      <div class="event-image" style="background-image: url('images/event1.jpg');"></div>
+    <!-- Event Cards -->
+    <a href="brain-storm.html" class="event-card" target="_blank">
+      <img class="event-image" src="images/event1.jpg" alt="Brain Storm poster" loading="lazy">
       <div class="event-text">Brain Storm (Technical Quiz)</div>
-    </div>
-    <div class="event-card">
-      <div class="event-image" style="background-image: url('images/event2.jpg');"></div>
+    </a>
+    <a href="chem-spark.html" class="event-card" target="_blank">
+      <img class="event-image" src="images/event2.jpg" alt="Chem Spark Summit poster" loading="lazy">
       <div class="event-text">Chem Spark Summit (Technical Paper/Poster)</div>
-    </div>
-    <div class="event-card">
-      <div class="event-image" style="background-image: url('images/event3.jpg');"></div>
+    </a>
+    <a href="floor-cross.html" class="event-card" target="_blank">
+      <img class="event-image" src="images/event3.jpg" alt="Floor Cross poster" loading="lazy">
       <div class="event-text">Floor Cross (Debate)</div>
-    </div>
-    <div class="event-card">
-      <div class="event-image" style="background-image: url('images/event4.jpg');"></div>
+    </a>
+    <a href="weavers.html" class="event-card" target="_blank">
+      <img class="event-image" src="images/event4.jpg" alt="Weavers poster" loading="lazy">
       <div class="event-text">Weavers (Design Contest)</div>
-    </div>
-    <div class="event-card">
-      <div class="event-image" style="background-image: url('images/event5.jpg');"></div>
+    </a>
+    <a href="off-script.html" class="event-card" target="_blank">
+      <img class="event-image" src="images/event5.jpg" alt="Off-Script poster" loading="lazy">
       <div class="event-text">Off-Script (Extempore)</div>
-    </div>
-    <div class="event-card">
-      <div class="event-image" style="background-image: url('images/event6.jpg');"></div>
+    </a>
+    <a href="mock-shark-tank.html" class="event-card" target="_blank">
+      <img class="event-image" src="images/event6.jpg" alt="Mock Shark Tank poster" loading="lazy">
       <div class="event-text">Mock Shark Tank (Startup Idea)</div>
-    </div>
-    <div class="event-card">
-      <div class="event-image" style="background-image: url('images/event7.jpg');"></div>
+    </a>
+    <a href="reactor-diffuser.html" class="event-card" target="_blank">
+      <img class="event-image" src="images/event7.jpg" alt="Reactor Diffuser poster" loading="lazy">
       <div class="event-text">Reactor Diffuser (Problem Solving)</div>
-    </div>
-    <div class="event-card">
-      <div class="event-image" style="background-image: url('images/event8.jpg');"></div>
+    </a>
+    <a href="chem-pictionary.html" class="event-card" target="_blank">
+      <img class="event-image" src="images/event8.jpg" alt="Chem Pictionary poster" loading="lazy">
       <div class="event-text">Chem Pictionary (Connection)</div>
-    </div>
-    <div class="event-card">
-      <div class="event-image" style="background-image: url('images/event9.jpg');"></div>
+    </a>
+    <a href="brain-teaser.html" class="event-card" target="_blank">
+      <img class="event-image" src="images/event9.jpg" alt="Brain Teaser poster" loading="lazy">
       <div class="event-text">Brain Teaser (Memory Game)</div>
-    </div>
+    </a>
   </div>
 
 </body>
